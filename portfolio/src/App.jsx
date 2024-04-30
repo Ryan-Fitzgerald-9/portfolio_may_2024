@@ -3,17 +3,17 @@ import Navbar from './components/navbar/Navbar'
 
 function App() {
   return <div>
-    <section>
+    <section id="Home">
       <Navbar/>
     </section>
-    <section>Parallax</section>
+    <section id="Skills">Parallax</section>
     <section>Skills</section>
-    <section>Parallax</section>
+    <section id="Portfolio">Parallax</section>
     <section>Portfolio1</section>
     <section>Portfolio2</section>
     <section>Portfolio3</section>
     <section>Portfolio4</section>
-    <section>Contact</section>
+    <section id="Contact">Contact</section>
   </div>
 }
 
