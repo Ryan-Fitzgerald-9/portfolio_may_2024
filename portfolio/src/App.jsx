@@ -1,5 +1,6 @@
 import "./app.scss";
 import Contact from "./components/contact/Contact";
+import Cursor from "./components/cursor/Cursor";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
@@ -9,6 +10,7 @@ import Skills from "./components/skills/Skills";
 function App() {
   return (
     <div>
+      <Cursor />
       <section id="Home">
         <Navbar />
         <Home />

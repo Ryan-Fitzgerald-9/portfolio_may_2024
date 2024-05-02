@@ -55,15 +55,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let's Connect</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@test.com</span>
+          <span>rfitzgerald806@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Location</h2>
           <span>Blackstone, MA</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>555 555 5555</span>
+          {/* <h2>Phone</h2>
+          <span>555 555 5555</span> */}
         </motion.div>
       </motion.div>
       <div className="formContainer">
