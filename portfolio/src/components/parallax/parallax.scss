@@ -16,6 +16,11 @@
             font-size: 72px;
             text-align: center;
         }
+
+        @include tablet {
+            font-size: 72px;
+            text-align: center;
+        }
     }
 
     .mountains {
@@ -31,6 +36,11 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
+
+        @include tablet {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     .planets {
@@ -43,6 +53,11 @@
         z-index: 2;
 
         @include mobile {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include tablet {
             background-size: contain;
             background-repeat: no-repeat;
         }

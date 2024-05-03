@@ -13,13 +13,21 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Ryan Fitzgerald
+          My Portfolio
         </motion.span>
         <div className="social">
-          <a href="#">
+          <a 
+            href="https://github.com/Ryan-Fitzgerald-9"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <FaGithub className="github" />
           </a>
-          <a href="#">
+          <a 
+            href="https://www.linkedin.com/in/ryan-fitzgerald-rf09"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <FaLinkedin className="linkedin" />
           </a>
           <a href="#">
