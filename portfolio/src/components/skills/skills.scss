@@ -21,6 +21,10 @@
             flex-direction: column;
         }
 
+        @include tablet {
+            flex: 0.5;
+        }
+
         p {
             font-weight: 200;
             font-size: 20px;
@@ -37,6 +41,10 @@
                 width: 300px;
                 padding-bottom: 10px;
             }
+
+            @include tablet {
+                width: 300px;
+            }
         }
     }
     .titleContainer {
@@ -47,6 +55,11 @@
 
         @include mobile {
             width: 100%;
+        }
+
+        @include tablet {
+            width: 100%;
+            flex: 1;
         }
 
         .title {
@@ -71,6 +84,12 @@
                     height: 65px;
                     border-radius: 25px;
                 }
+
+                @include tablet {
+                    width: 260px;
+                    height: 95px;
+                    border-radius: 40px;
+                }
             }
 
             h1 {
@@ -79,6 +98,10 @@
 
                 @include mobile {
                     font-size: 36px;
+                }
+
+                @include tablet {
+                    font-size: 82px;
                 }
             }
 
@@ -95,6 +118,12 @@
                     width: 100px;
                     height: 35px;
                 }
+
+                @include tablet {
+                    font-size: 22px;
+                    width: 200px;
+                    height: 75px;
+                }
             }
         }
     }
@@ -105,6 +134,12 @@
         margin: auto;
 
         @include mobile {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @include tablet {
+            flex: 3;
             flex-direction: column;
             width: 100%;
         }
@@ -122,8 +157,18 @@
                 padding: 10px;
             }
 
+            @include tablet {
+                align-items: center;
+                gap: 20px;
+                padding: 10px;
+            }
+
             p {
                 @include mobile {
+                    display: none;
+                }
+
+                @include tablet {
                     display: none;
                 }
             }
