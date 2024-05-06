@@ -1,4 +1,5 @@
 import React from 'react'
+import "./skillitem.scss"
 
 const SkillItem = ({ title, imgLoc }) => {
   return (

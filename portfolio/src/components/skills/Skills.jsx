@@ -58,14 +58,16 @@ const Skills = () => {
         >
           <h2>Languages</h2>
           <div>
-            {techicons.map((skill) => (
-              <SkillItem
-                key={skill.title}
-                imgLoc={skill.imgLoc}
-                title={skill.title}
-                type={skill.type}
-              />
-            ))}
+            {techicons
+              .filter((skill) => skill.type === "language")
+              .map((skill) => (
+                <SkillItem
+                  key={skill.title}
+                  imgLoc={skill.imgLoc}
+                  title={skill.title}
+                  type={skill.type}
+                />
+              ))}
           </div>
         </motion.div>
         <motion.div
@@ -74,14 +76,16 @@ const Skills = () => {
         >
           <h2>Libraries / Frameworks</h2>
           <div>
-            {techicons.map((skill) => (
-              <SkillItem
-                key={skill.title}
-                imgLoc={skill.imgLoc}
-                title={skill.title}
-                type={skill.type}
-              />
-            ))}
+            {techicons
+              .filter((skill) => skill.type === "library-framework")
+              .map((skill) => (
+                <SkillItem
+                  key={skill.title}
+                  imgLoc={skill.imgLoc}
+                  title={skill.title}
+                  type={skill.type}
+                />
+              ))}
           </div>
         </motion.div>
         <motion.div
@@ -90,14 +94,16 @@ const Skills = () => {
         >
           <h2>Databases</h2>
           <div>
-            {techicons.map((skill) => (
-              <SkillItem
-                key={skill.title}
-                imgLoc={skill.imgLoc}
-                title={skill.title}
-                type={skill.type}
-              />
-            ))}
+            {techicons
+              .filter((skill) => skill.type === "database")
+              .map((skill) => (
+                <SkillItem
+                  key={skill.title}
+                  imgLoc={skill.imgLoc}
+                  title={skill.title}
+                  type={skill.type}
+                />
+              ))}
           </div>
         </motion.div>
         <motion.div
@@ -106,14 +112,16 @@ const Skills = () => {
         >
           <h2>Other</h2>
           <div>
-            {techicons.map((skill) => (
-              <SkillItem
-                key={skill.title}
-                imgLoc={skill.imgLoc}
-                title={skill.title}
-                type={skill.type}
-              />
-            ))}
+            {techicons
+              .filter((skill) => skill.type === "other")
+              .map((skill) => (
+                <SkillItem
+                  key={skill.title}
+                  imgLoc={skill.imgLoc}
+                  title={skill.title}
+                  type={skill.type}
+                />
+              ))}
           </div>
         </motion.div>
       </motion.div>

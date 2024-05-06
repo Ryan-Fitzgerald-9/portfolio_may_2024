@@ -1,12 +1,12 @@
 export default [
     {
         title: 'HTML5',
-        imgLoc: '/assets/html5.png',
+        imgLoc: 'html5.png',
         type: 'language'
     },
     {
         title: 'CSS3',
-        imgLoc: '/assets/css3.png',
+        imgLoc: '/css3.png',
         type: 'language'
     },
     {
