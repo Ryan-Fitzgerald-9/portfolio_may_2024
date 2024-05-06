@@ -6,77 +6,117 @@ export default [
     },
     {
         title: 'CSS3',
-        imgLoc: '/css3.png',
+        imgLoc: 'css3.png',
         type: 'language'
     },
     {
         title: 'Javascript',
-        imgLoc: '/assets/js.png',
+        imgLoc: 'js.png',
         type: 'language'
     },
     {
         title: 'Python',
-        imgLoc: '/assets/python.png',
+        imgLoc: 'python.png',
         type: 'language'
     },
     {
         title: 'Tailwind CSS',
-        imgLoc: '/assets/tailwind.png',
+        imgLoc: 'tailwind.png',
         type: 'library-framework'
     },
     {
         title: 'React',
-        imgLoc: '/assets/react.png',
+        imgLoc: 'react.png',
         type: 'library-framework'
     },
     {
         title: 'Node.js',
-        imgLoc: '/assets/nodejs.png',
+        imgLoc: 'nodejs.png',
         type: 'library-framework'
     },
     {
         title: 'Django',
-        imgLoc: '/assets/django.png',
+        imgLoc: 'django.png',
         type: 'library-framework'
     },
     {
         title: 'Bootstrap',
-        imgLoc: '/assets/bootstrap.png',
+        imgLoc: 'bootstrap.png',
         type: 'library-framework'
     },
     {
         title: 'PostgreSQL',
-        imgLoc: '/assets/postgresql.png',
+        imgLoc: 'postgresql.png',
         type: 'database'
     },
     {
         title: 'MongoDB',
-        imgLoc: '/assets/mongodb.png',
+        imgLoc: 'mongodb.png',
         type: 'database'
     },
     {
         title: 'JSON & REST API',
-        imgLoc: '/assets/jsonrestapi.png',
+        imgLoc: 'jsonrestapi.png',
         type: 'other'
     },
     {
         title: 'Express',
-        imgLoc: '/assets/express.png',
+        imgLoc: 'express.png',
         type: 'library-framework'
     },
     {
         title: 'Thunderclient',
-        imgLoc: '/assets/thunderclient.png',
+        imgLoc: 'thunderclient.png',
         type: 'other'
     },
     {
         title: 'Firebase Auth',
-        imgLoc: '/assets/firebaseauth2.png',
+        imgLoc: 'firebaseauth2.png',
         type: 'other'
     },
     {
-        title: 'Firestore Db',
-        imgLoc: '/assets/firestore.png',
+        title: 'Firestore DB',
+        imgLoc: 'firestore.png',
         type: 'database'
-    }    
+    },
+    {
+        title: 'C#',
+        imgLoc: 'c-sharp.png',
+        type: 'language'
+    },
+    {
+        title: 'SQL',
+        imgLoc: 'sql.png',
+        type: 'database'
+    },
+    {
+        title: 'Sass',
+        imgLoc: 'sass.png',
+        type: 'library-framework'
+    },
+    {
+        title: 'Framer-Motion',
+        imgLoc: 'framermotion.png',
+        type: 'library-framework'
+    },
+    {
+        title: 'MERN Stack',
+        imgLoc: 'mernstack.png',
+        type: 'other'
+    },
+    {
+        title: 'Git',
+        imgLoc: 'git.png',
+        type: 'other'
+    },
+    {
+        title: 'GitHub',
+        imgLoc: 'github.png',
+        type: 'other'
+    },
+    {
+        title: 'VS Code',
+        imgLoc: 'vscode.png',
+        type: 'other'
+    },    
 ]

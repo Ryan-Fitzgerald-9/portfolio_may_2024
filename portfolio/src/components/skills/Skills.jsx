@@ -57,7 +57,7 @@ const Skills = () => {
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
           <h2>Languages</h2>
-          <div>
+          <div className="techicons">
             {techicons
               .filter((skill) => skill.type === "language")
               .map((skill) => (
@@ -75,7 +75,7 @@ const Skills = () => {
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
           <h2>Libraries / Frameworks</h2>
-          <div>
+          <div className="techicons">
             {techicons
               .filter((skill) => skill.type === "library-framework")
               .map((skill) => (
@@ -93,7 +93,7 @@ const Skills = () => {
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
           <h2>Databases</h2>
-          <div>
+          <div className="techicons">
             {techicons
               .filter((skill) => skill.type === "database")
               .map((skill) => (
@@ -110,8 +110,8 @@ const Skills = () => {
           className="box"
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
-          <h2>Other</h2>
-          <div>
+          <h2>Miscellaneous</h2>
+          <div className="techicons">
             {techicons
               .filter((skill) => skill.type === "other")
               .map((skill) => (

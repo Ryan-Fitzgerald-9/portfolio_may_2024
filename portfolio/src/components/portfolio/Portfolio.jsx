@@ -66,7 +66,12 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <div className="links">
+              {item.appLink && (
+                <a href={item.appLink} target="blank" rel="noopener noreferrer" className="demo">See Demo</a>
+              )}
+              <a href={item.githubLink} target="blank" rel="noopener noreferrer" className="github">Github</a>
+            </div>
           </motion.div>
         </div>
       </div>

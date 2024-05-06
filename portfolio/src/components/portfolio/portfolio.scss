@@ -117,13 +117,34 @@
                     }
                 }
 
-                button {
-                    background-color: orange;
-                    border: none;
-                    border-radius: 10px;
-                    padding: 10px;
-                    width: 200px;
-                    cursor: pointer;
+                .links {
+                    display: flex;
+                    // margin: auto;
+
+                    .github {
+                        display: flex;
+                        justify-content: center;
+                        background-color: transparent;
+                        color: orange;
+                        border: 1px solid orange;
+                        border-radius: 10px;
+                        padding: 10px;
+                        width: 200px;
+                        cursor: pointer;
+                    }
+
+                    .demo {
+                        display: flex;
+                        justify-content: center;
+                        background-color: orange;
+                        color: #0c0c1d;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 10px;
+                        width: 200px;
+                        cursor: pointer;
+                        margin-right: 30px;
+                    }
                 }
             }
         }

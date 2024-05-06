@@ -106,8 +106,8 @@
             }
 
             button {
-                width: 300px;
-                height: 100px;
+                width: 240px;
+                height: 80px;
                 border-radius: 50px;
                 background-color: orange;
                 border: none;
@@ -149,7 +149,9 @@
             // border: 0.5px solid gray;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: first baseline;
+            align-items: center;
+
 
             @include mobile {
                 align-items: center;
@@ -163,14 +165,12 @@
                 padding: 10px;
             }
 
-            p {
-                @include mobile {
-                    display: none;
-                }
-
-                @include tablet {
-                    display: none;
-                }
+            .techicons {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                align-items: center;
+                gap: 20px;
+                padding-top: 20px;
             }
         }
     }
