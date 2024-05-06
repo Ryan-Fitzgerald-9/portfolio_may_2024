@@ -1,4 +1,6 @@
 import "./skills.scss";
+import techicons from "./techicons.js";
+import SkillItem from "./SkillItem.jsx";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -15,7 +17,7 @@ const variants = {
       duration: 1,
       staggerChildren: 0.1,
     },
-  }
+  },
 };
 
 const Skills = () => {
@@ -49,57 +51,70 @@ const Skills = () => {
           <button>WHAT I KNOW</button>
         </div>
       </motion.div>
-      <motion.div
-        className="listContainer"
-        variants={variants}
-      >
+      <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
-          <h2 >Languages</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur facere sit officiis quia doloremque exercitationem
-            aliquid, veniam hic unde est ea et quasi praesentium quibusdam
-            laboriosam ut dignissimos voluptatem itaque!
-          </p>
+          <h2>Languages</h2>
+          <div>
+            {techicons.map((skill) => (
+              <SkillItem
+                key={skill.title}
+                imgLoc={skill.imgLoc}
+                title={skill.title}
+                type={skill.type}
+              />
+            ))}
+          </div>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
           <h2>Libraries / Frameworks</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur facere sit officiis quia doloremque exercitationem
-            aliquid, veniam hic unde est ea et quasi praesentium quibusdam
-            laboriosam ut dignissimos voluptatem itaque!
-          </p>
+          <div>
+            {techicons.map((skill) => (
+              <SkillItem
+                key={skill.title}
+                imgLoc={skill.imgLoc}
+                title={skill.title}
+                type={skill.type}
+              />
+            ))}
+          </div>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
           <h2>Databases</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur facere sit officiis quia doloremque exercitationem
-            aliquid, veniam hic unde est ea et quasi praesentium quibusdam
-            laboriosam ut dignissimos voluptatem itaque!
-          </p>
+          <div>
+            {techicons.map((skill) => (
+              <SkillItem
+                key={skill.title}
+                imgLoc={skill.imgLoc}
+                title={skill.title}
+                type={skill.type}
+              />
+            ))}
+          </div>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ y: -20, scale: 1.1, z: 5, color: "#FFA500" }}
         >
           <h2>Other</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur facere sit officiis quia doloremque exercitationem
-            aliquid, veniam hic unde est ea et quasi praesentium quibusdam
-            laboriosam ut dignissimos voluptatem itaque!
-          </p>
+          <div>
+            {techicons.map((skill) => (
+              <SkillItem
+                key={skill.title}
+                imgLoc={skill.imgLoc}
+                title={skill.title}
+                type={skill.type}
+              />
+            ))}
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>
