@@ -65,7 +65,7 @@ export default [
         type: 'library-framework'
     },
     {
-        title: 'Thunderclient',
+        title: 'Thunder Client',
         imgLoc: 'thunderclient.png',
         type: 'other'
     },

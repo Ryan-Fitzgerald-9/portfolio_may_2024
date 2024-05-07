@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .skill {
     text-align: center;
 
@@ -6,10 +8,19 @@
         height: 50px; 
         border-radius: 5px;
         object-fit: cover;
+
+        @include mobile {
+            width: 25px;
+            height: 25px;
+        }
     }
 
     .skill-title {
         font-size: 14px;
         margin-bottom: 5px;
+
+        @include mobile {
+            font-size: 10px;
+        }
     }
 }
