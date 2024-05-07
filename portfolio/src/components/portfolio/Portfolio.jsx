@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import techicons from "../skills/techicons.js";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
@@ -12,7 +13,7 @@ const items = [
       "Tailwind CSS",
       "React",
       "Firebase Auth",
-      "Firestore Db",
+      "Firestore DB",
     ],
     desc: "A Netflix clone app where users can see movies details, sign-up/login, and save/remove favorites.",
     githubLink: "https://github.com/Ryan-Fitzgerald-9/UpNxt",
@@ -56,6 +57,21 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
+  const getTechIcon = (techTitle) => {
+    const techItem = techicons.find((item) => item.title === techTitle);
+    if (techItem) {
+      return (
+        <img
+          key={techTitle}
+          src={techItem.imgLoc}
+          alt={techTitle}
+          className="stack-img"
+        />
+      );
+    }
+    return null;
+  };
+
   return (
     <section>
       <div className="container">
@@ -63,14 +79,31 @@ const Single = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
+            <div className="stack-icons">
+              {item.stack.map((item) => getTechIcon(item))}
+            </div>
             <div className="links">
               {item.appLink && (
-                <a href={item.appLink} target="blank" rel="noopener noreferrer" className="demo">See Demo</a>
+                <a
+                  href={item.appLink}
+                  target="blank"
+                  rel="noopener noreferrer"
+                  className="demo"
+                >
+                  See Demo
+                </a>
               )}
-              <a href={item.githubLink} target="blank" rel="noopener noreferrer" className="github">Github</a>
+              <a
+                href={item.githubLink}
+                target="blank"
+                rel="noopener noreferrer"
+                className="github"
+              >
+                Github
+              </a>
             </div>
           </motion.div>
         </div>

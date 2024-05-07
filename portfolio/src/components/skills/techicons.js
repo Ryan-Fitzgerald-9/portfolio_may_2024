@@ -32,7 +32,7 @@ export default [
     {
         title: 'Node.js',
         imgLoc: 'nodejs.png',
-        type: 'library-framework'
+        type: 'other'
     },
     {
         title: 'Django',
@@ -117,6 +117,11 @@ export default [
     {
         title: 'VS Code',
         imgLoc: 'vscode.png',
+        type: 'other'
+    },
+    {
+        title: 'Vite',
+        imgLoc: 'vite.png',
         type: 'other'
     },    
 ]
