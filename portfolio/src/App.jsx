@@ -9,26 +9,26 @@ import Skills from "./components/skills/Skills";
 
 function App() {
   return (
-    <div className="app">
-      <Cursor />
-      <section id="Home">
-        <Navbar />
-        <Home />
-      </section>
-      <section id="Skills">
-        <Parallax type="skills" />
-      </section>
-      <section>
-        <Skills />
-      </section>
-      <section id="Portfolio">
-        <Parallax type="portfolio" />
-      </section>
-        <Portfolio />
-      <section id="Contact">
-        <Contact />
-      </section>
-    </div>
+      <div className="app">
+        <Cursor />
+        <section id="Home">
+          <Navbar />
+          <Home />
+        </section>
+        <section id="Skills">
+          <Parallax type="skills" />
+        </section>
+        <section>
+          <Skills />
+        </section>
+        <section id="Portfolio">
+          <Parallax type="portfolio" />
+        </section>
+          <Portfolio />
+        <section id="Contact">
+          <Contact />
+        </section>
+      </div>
   );
 }
 

@@ -40,7 +40,7 @@ const items = [
   {
     id: 4,
     title: "SNAKE",
-    img: "/snake.png",
+    img: "/snake2.png",
     stack: ["Javascript", "CSS3", "HTML5"],
     desc: "a retro-style version of the mobile game Snake.",
     githubLink: "https://github.com/Ryan-Fitzgerald-9/Project-1-SNAKE",
