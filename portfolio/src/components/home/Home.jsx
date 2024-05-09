@@ -94,7 +94,8 @@ const Home = () => {
                 ]}
                 wrapper="h1"
                 style={{color: "orange", fontWeight:"700"}}
-                speed={40}
+                speed={35}
+                deletionSpeed={55}
                 repeat={Infinity}
               />
             </motion.div>
