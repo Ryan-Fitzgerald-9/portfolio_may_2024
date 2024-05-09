@@ -1,4 +1,5 @@
 import "./home.scss";
+import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -75,9 +76,29 @@ const Home = () => {
           whileInView="animate"
         >
           <motion.h2 variants={textVariants}>RYAN FITZGERALD</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Software Engineer and Web Developer
-          </motion.h1>
+          <motion.div className="typeContainer">
+            <motion.h1 variants={textVariants}>I'm a {" "}</motion.h1>
+            <motion.div className="typeAnimation">
+              <TypeAnimation
+                sequence={[
+                  "Software Engineer.",
+                  2000,
+                  "Web Developer.",
+                  2000,
+                  "Problem Solver.",
+                  2000,
+                  "Creative Thinker.",
+                  2000,
+                  "Process Enhancer.",
+                  2000,
+                ]}
+                wrapper="h1"
+                style={{color: "orange", fontWeight:"700"}}
+                speed={40}
+                repeat={Infinity}
+              />
+            </motion.div>
+          </motion.div>
           <motion.img
             variants={textVariants}
             animate="scrollButton"
@@ -92,7 +113,7 @@ const Home = () => {
         initial="initial"
         animate="animate"
       >
-        Full-Stack Creative Collaboration
+        Full-Stack Resourceful Collaborative
       </motion.div>
       <motion.div
         className="imageContainer"
@@ -100,7 +121,7 @@ const Home = () => {
         initial="initial"
         whileInView="animate"
       >
-        <img src="2robots.png" alt="dev" />
+        <img src="programmer.png" alt="dev" />
       </motion.div>
     </div>
   );

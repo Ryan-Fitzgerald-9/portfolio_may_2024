@@ -29,16 +29,16 @@ section {
 }
 
 body::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 8px;
 }
 
 body::-webkit-scrollbar-track {
-    background: transparent; /* Transparent background for the scrollbar track */
+    background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: gray; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Border radius of the scrollbar thumb */
+    background: gray;
+    border-radius: 10px;
 }
 
 @mixin mobile {
@@ -52,9 +52,3 @@ body::-webkit-scrollbar-thumb {
         @content;
     }
 }
-
-// @mixin desktop {
-//     @media (max-width: 1366px) {
-//         @content;
-//     }
-// }

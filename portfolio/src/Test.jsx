@@ -15,8 +15,6 @@ const Test = () => {
       <motion.div
         className="box"
         variants={variants}
-        // initial="hidden"
-        // animate="visible"
         animate={open ? "visible" : "hidden"}
       ></motion.div>
       <button onClick={()=>setOpen(prev=>!prev)}>Click</button>
