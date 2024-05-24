@@ -82,20 +82,20 @@ const Home = () => {
               <TypeAnimation
                 sequence={[
                   "Software Engineer.",
-                  2000,
+                  1500,
                   "Web Developer.",
-                  2000,
+                  1500,
                   "Problem Solver.",
-                  2000,
+                  1500,
                   "Creative Thinker.",
-                  2000,
+                  1500,
                   "Process Enhancer.",
-                  2000,
+                  1500,
                 ]}
                 wrapper="h1"
                 style={{color: "orange", fontWeight:"700"}}
-                speed={35}
-                deletionSpeed={55}
+                speed={30}
+                deletionSpeed={50}
                 repeat={Infinity}
               />
             </motion.div>
