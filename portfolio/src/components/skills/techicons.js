@@ -45,11 +45,6 @@ export default [
         type: 'library-framework'
     },
     {
-        title: 'PostgreSQL',
-        imgLoc: 'postgresql.png',
-        type: 'database'
-    },
-    {
         title: 'MongoDB',
         imgLoc: 'mongodb.png',
         type: 'database'
@@ -77,6 +72,11 @@ export default [
     {
         title: 'Firestore DB',
         imgLoc: 'firestore.png',
+        type: 'database'
+    },
+    {
+        title: 'PostgreSQL',
+        imgLoc: 'postgresql.png',
         type: 'database'
     },
     {
