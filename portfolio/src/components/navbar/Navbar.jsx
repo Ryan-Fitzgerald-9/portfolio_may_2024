@@ -31,7 +31,7 @@ const Navbar = () => {
             <FaLinkedin className="linkedin" />
           </a>
           <a 
-            href="/rfitzgerald-resume.pdf"
+            href="/rfitzgerald-res.pdf"
             target="_blank"
             download
           >

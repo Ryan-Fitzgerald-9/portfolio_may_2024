@@ -31,7 +31,7 @@ const items = [
   {
     id: 3,
     title: "Mini-Compiler",
-    img: "/compiler-img.png",
+    img: "/compilerimg.png",
     stack: ["Python"],
     desc: "A very small compiler that takes BASIC and outputs C code. This was a fun project learning how the lexer, parser, and emitter work together in compiling code!",
     githubLink: "https://github.com/Ryan-Fitzgerald-9/mini-compiler",
